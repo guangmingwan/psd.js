@@ -1,7 +1,7 @@
 {
   "name": "psd.js2",
   "description": "A general purpose Photoshop file parser.",
-  "version": "3.2.1",
+  "version": "3.2.3",
   "main": "./index.js",
   "keywords": [
     "psd",
@@ -15,7 +15,7 @@
     "url": "https://github.com/guangmingwan/psd.js"
   },
   "dependencies": {
-    "coffee-script": "~ 1.7.1",
+    "guangmingwan-coffee-script": "~ 1.7.1",
     "coffeescript-module": "~ 0.2.1",
     "iconv-lite": "~ 0.4.4",
     "jspack": "~ 0.0.3",
