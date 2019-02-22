@@ -24,8 +24,13 @@ module.exports =
         if len < 128
           len += 1
           #@channelData.splice @chanPos, 0, @file.read(len)...
-          data = @file.read(len)          
-          @channelData.set data, @chanPos
+          data = @file.read(len)
+          try
+            @channelData.set data, @chanPos
+          catch error
+            len = len;
+          finally
+
           @chanPos += len
         else if len > 128
           len ^= 0xff
